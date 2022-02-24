@@ -37,8 +37,15 @@ div.cloud{
 }
 
 div h1{
-    font-size: 1.2em;
+    font-size: 1.1em;
     display:table-cell; 
     vertical-align:middle;
 }
 
+@media(min-width: 660px){
+    section{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
