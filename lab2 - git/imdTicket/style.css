@@ -28,13 +28,15 @@
 }
 
 .container .qr{
-    background-image: url(images/qr_code.png);
+    background-image: url(images/qrcode.png);
     /*height: auto;
     max-width: 100%;*/
     margin: auto;
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
     background-size: cover;
+    background-color: white;
+    border-radius: 7px;
 }
 
 .container .info{
