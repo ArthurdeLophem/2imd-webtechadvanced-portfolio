@@ -1,3 +1,54 @@
 *{
     box-sizing: border-box;
+    color: white;
+}
+
+.container{
+    background-image: url(images/festivalBack.jpg);
+    /*height: auto;
+    max-width: 100%;*/
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header{
+    background: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.container .header p{
+    color: whitesmoke;
+    opacity: 0.5;
+    font-weight: lighter;
+}
+
+.container .qr{
+    background-image: url(images/qr_code.png);
+    /*height: auto;
+    max-width: 100%;*/
+    margin: auto;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+}
+
+.container .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 5px;
+}
+
+.container .info h2{
+    text-align: center;
+    border: 1.5px solid white;
+}
+
+.container .info .price{
+    grid-column: 1/3;
 }
