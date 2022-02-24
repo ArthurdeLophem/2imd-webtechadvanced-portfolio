@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    text-align:center;
+}
+
+div.homework{
+    background-color: #F72B4F;
+}
+
+div.broken{
+    background-color: #58F5F0;
+}
+
+div.cloud{
+    background-color: #FFFF1D;
+}
+
+div h1{
+    display:table-cell; vertical-align:middle
+}
+
