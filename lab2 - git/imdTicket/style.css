@@ -78,6 +78,18 @@ p{
         margin: 10px;
         grid-column: 1/4;
         grid-row: 1/4;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .container .header h1{
+        margin: 30px;
+        font-size: 3.5em;
+        letter-spacing: 10px;
+    }
+    .container .header p{
+        margin: 0px;
     }
 
     .container .qr{
@@ -123,7 +135,7 @@ p{
         background: white;
         color: white;
     }
-    .container .header p{
+    p{
         color: black;
     }
 }
