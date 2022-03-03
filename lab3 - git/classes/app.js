@@ -1,4 +1,4 @@
-import ToDo from './classes/to-do';
+import ToDo from './todo';
 
 export default class App {
     constructor() {
@@ -23,8 +23,10 @@ export default class App {
     createItem(e) {
         if (e.key === "Enter") {
             console.log("📕");
-            let todo = new ToDo("demoItem");
+            content = document.querySelector("#add-item-text").value;
+            let todo = new ToDo(content);
             todo.add();
+            console.log(content);
         }
 
         // HINT🤩
