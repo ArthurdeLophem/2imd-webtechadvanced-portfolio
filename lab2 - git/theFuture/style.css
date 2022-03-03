@@ -20,8 +20,7 @@ section div{
     border-radius: 5px;
     text-align:center;
     margin: 10px;
-    padding: 10px;
-    
+    padding: 10px; 
 }
 
 div.homework{
@@ -66,5 +65,4 @@ div h1{
         grid-column: 4/6;
         grid-row: 2/4;
     }
-
 }
