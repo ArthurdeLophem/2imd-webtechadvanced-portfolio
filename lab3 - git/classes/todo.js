@@ -8,7 +8,19 @@ export default class Todo {
     createElement() {
         let li = document.createElement("li");
         li.innerHTML = this.title
-        li.classList.add("prior-high");
+        switch (this.title) {
+            case "low":
+                li.classList.add("prior-low");
+                break;
+            case "high":
+                li.classList.add("prior-high");
+                break;
+            default:
+                li.classList.add("prior-medium");
+        }
+
+
+
         return li;
         // HINT🤩
         // this method will create the HTML structure with the correct classes, based on the todo priority
@@ -22,6 +34,10 @@ export default class Todo {
         // HINT🤩
         // this function should mark the current todo as done, by adding the correct CSS class
         // if the item is clicked, but was already marked as done, remove the item from the list
+
+        /*this.li.addEventListener("change", (e) => {
+            console.log("clicked")
+        });*/
     }
 
     add() {
