@@ -8,17 +8,16 @@ export default class Todo {
     createElement() {
         let li = document.createElement("li");
         li.innerHTML = this.title
-        switch (this.title) {
-            case "low":
+        switch (true) {
+            case this.title.includes("low:"):
                 li.classList.add("prior-low");
                 break;
-            case "high":
+            case this.title.includes("high:"):
                 li.classList.add("prior-high");
                 break;
             default:
                 li.classList.add("prior-medium");
         }
-
 
 
         return li;
