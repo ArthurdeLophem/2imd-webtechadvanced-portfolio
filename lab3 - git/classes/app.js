@@ -27,6 +27,7 @@ export default class App {
             let todo = new ToDo(content);
             todo.add();
             console.log(content);
+            this.reset();
         }
 
         // HINT🤩
@@ -47,5 +48,6 @@ export default class App {
 
     reset() {
         // this function should reset the form / clear the text field
+        content = document.querySelector("#add-item-text").value = "";
     }
 }
