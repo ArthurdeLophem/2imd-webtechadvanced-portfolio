@@ -7,19 +7,22 @@ export default class Todo {
 
     createElement() {
         let li = document.createElement("li");
-        li.innerHTML = this.title
+        let rtitle;
         switch (true) {
             case this.title.includes("low:"):
                 li.classList.add("prior-low");
+                rtitle = this.title.replace(/low:/g, '');
                 break;
             case this.title.includes("high:"):
                 li.classList.add("prior-high");
+                rtitle = this.title.replace(/high:/g, '');
                 break;
             default:
                 li.classList.add("prior-medium");
-        }
+                rtitle = this.title.replace(/high:/g, '');
+        };
 
-
+        li.innerHTML = rtitle
         return li;
         // HINT🤩
         // this method will create the HTML structure with the correct classes, based on the todo priority
