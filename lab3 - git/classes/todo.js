@@ -36,10 +36,15 @@ export default class Todo {
         // HINT🤩
         // this function should mark the current todo as done, by adding the correct CSS class
         // if the item is clicked, but was already marked as done, remove the item from the list
+        let todo = document.querySelector(".todo-list")
 
-        /*this.li.addEventListener("change", (e) => {
-            console.log("clicked")
-        });*/
+        todo.addEventListener('change', event => {
+            if (event.target.classList.contains('done')) {
+                console.log("woooow full done dead thing")
+            } else {
+                console.log("will have to add to greeeeeen")
+            }
+        });
     }
 
     add() {

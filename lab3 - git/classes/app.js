@@ -29,7 +29,6 @@ export default class App {
             console.log(content);
             this.reset();
         }
-
         // HINT🤩
         // this function should create a new todo by using the Todo() class
         // new Todo(text)
