@@ -30,38 +30,27 @@ export default class App {
             return response.json();
         }).then(data => {
             console.log(data);
-            let temp = data.main.temp;
+            let temp = Math.round(data.main.temp);
             let sky = data.weather[0].description;
-            let txt = "WoW, " + sky + " " + temp + "°C" + ", it's time for";
+            let txt = "WoW, " + sky + " " + temp + "°C" + ", it's time for...";
             document.querySelector(".weather").innerHTML = txt;
-
+            //this.checkweather(data);
             //this.printWeather();
+            this.getMeal();
         }).catch(err => {
             console.log(err);
         })
     }
 
-    printWeather() {
-        let summary = json.weather[0].description;
-        let temp = Math.round(json.main.temp);
-        console.log(temp);
-        document.querySelector('.weather').innerHTML = summary;
-        console.log("🧠");
-    }
-
-    /*getMeal() {
+    getMeal() {
         let url = `https://themealdb.com/api/json/v1/1/random.php`;
         fetch(url).then(response => {
             console.log(response);
-            response.json();
+            return response.json();
+        }).then(data => {
+            console.log(data);
+        }).catch(err => {
+            console.log(err);
         })
-            .then(data => {
-                //console.log(data);
-            })
-            .catch(err => {
-                console.log(err);
-            })
-    }*/
-
-
+    }
 }
