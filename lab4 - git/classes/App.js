@@ -32,7 +32,7 @@ export default class App {
             console.log(data);
             let temp = Math.round(data.main.temp);
             let sky = data.weather[0].description;
-            let txt = "WoW, " + sky + " " + temp + "°C" + ", it's time for...";
+            let txt = "WoW, " + sky + " and " + temp + "°C" + ", it's time for...";
             document.querySelector(".weather").innerHTML = txt;
             //this.checkweather(data);
             //this.printWeather();
@@ -43,11 +43,20 @@ export default class App {
     }
 
     getMeal() {
-        let url = `https://themealdb.com/api/json/v1/1/random.php`;
+        let randomizer = Math.floor(Math.random() * 64);
+        let url = `https://themealdb.com/api/json/v1/1/filter.php?c=dessert`;
         fetch(url).then(response => {
+
             console.log(response);
             return response.json();
         }).then(data => {
+            let food = data.meals[randomizer];
+            let foodname = food.strMeal;
+            let thumbnail = food.strMealThumb;
+
+            document.querySelector(".food").innerHTML = foodname;
+            document.querySelector(".foodimg").style.backgroundImage = `url(${thumbnail})`;
+            //console.log(thumbnail);
             console.log(data);
         }).catch(err => {
             console.log(err);
