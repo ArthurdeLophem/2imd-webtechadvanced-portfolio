@@ -12,3 +12,11 @@
   box-shadow: 11px 7px 14px -8px rgba(40,53,56,1);
   border-radius: 5px;
 }
+
+.foodimg{
+  background-image: url("");
+  width: 336px;
+  height: 280px;
+  background-size: cover;
+  
+}

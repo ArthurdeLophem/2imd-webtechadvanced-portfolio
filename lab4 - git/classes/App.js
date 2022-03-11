@@ -35,7 +35,6 @@ export default class App {
             let txt = "WoW, " + sky + " and " + temp + "°C" + ", it's time for...";
             document.querySelector(".weather").innerHTML = txt;
             //this.checkweather(data);
-            //this.printWeather();
             this.getMeal();
         }).catch(err => {
             console.log(err);
@@ -55,7 +54,7 @@ export default class App {
             let thumbnail = food.strMealThumb;
 
             document.querySelector(".food").innerHTML = foodname;
-            document.querySelector(".foodimg").style.backgroundImage = `url(${thumbnail})`;
+            document.querySelector(".foodimg").style.backgroundImage = "url('" + thumbnail + "')";
             //console.log(thumbnail);
             console.log(data);
         }).catch(err => {
