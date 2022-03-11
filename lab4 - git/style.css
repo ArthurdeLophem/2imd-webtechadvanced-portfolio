@@ -5,6 +5,14 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  width: 336;
-  height: 280;
+  width: 336px;
+  height: 280px;
+  -webkit-box-shadow: 11px 7px 14px -8px rgba(40,53,56,1);
+  -moz-box-shadow: 11px 7px 14px -8px rgba(40,53,56,1);
+  box-shadow: 11px 7px 14px -8px rgba(40,53,56,1);
+  border-radius: 5px;
+}
+
+.weather{
+
 }
