@@ -32,7 +32,7 @@ export default class App {
             console.log(data);
             let temp = Math.round(data.main.temp);
             let sky = data.weather[0].description;
-            let txt = "WoW, " + sky + " and " + temp + "°C" + ", it's time for...";
+            let txt = sky + " and " + temp + "°C" + ", time for...";
             document.querySelector(".weather").innerHTML = txt;
             //this.checkweather(data);
             this.getMeal();
