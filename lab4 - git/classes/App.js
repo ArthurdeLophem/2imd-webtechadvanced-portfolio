@@ -33,7 +33,11 @@ export default class App {
             let temp = Math.round(data.main.temp);
             let sky = data.weather[0].description;
             let txt = sky + " and " + temp + "°C" + ", time for...";
+            let getIcon = data.weather[0].icon
+            let weatherIcon = "http://openweathermap.org/img/w/" + getIcon + ".png";
             document.querySelector(".weather").innerHTML = txt;
+            document.querySelector(".degrees").innerHTML = temp + "°C";
+            document.querySelector(".icon").style.backgroundImage = "url('" + weatherIcon + "')";
             //this.checkweather(data);
             this.getMeal();
         }).catch(err => {

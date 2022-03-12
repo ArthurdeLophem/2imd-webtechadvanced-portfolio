@@ -1,3 +1,5 @@
+*{font-family: 'League Spartan', sans-serif;}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -63,14 +65,20 @@ p{
   transform: translateY(-130px);
 }
 
-.degrees{
+.degrees, .iContainer{
+  font-weight: bold;
   margin-left: 10px;
   width: 58px;
   height: 58px;
   background-color: white;
-  transform: translateY(-70px);
+  transform: translateY(-72px);
   text-align: center;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.icon{
+  width: 42px;
+  height: 42px;
 }
