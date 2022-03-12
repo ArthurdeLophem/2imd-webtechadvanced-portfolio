@@ -22,12 +22,17 @@
 
 .textHeader{
   overflow: hidden;
-  width: 336px;
   height: 25px;
   width: auto;
   background-color: white;
   font-weight: bold;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  
+}
+
+.animatorContainer {
+  display: flex;
+  width: fit-content;
 }
 
 p{
@@ -45,7 +50,7 @@ p{
 }
 @keyframes texter{
   0%{
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 
   100%{
