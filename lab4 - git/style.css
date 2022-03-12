@@ -4,12 +4,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 40px;
   width: 336px;
   height: 280px;
-  -webkit-box-shadow: 11px 7px 14px -8px rgba(40,53,56,1);
-  -moz-box-shadow: 11px 7px 14px -8px rgba(40,53,56,1);
-  box-shadow: 11px 7px 14px -8px rgba(40,53,56,1);
+  -webkit-box-shadow: 11px 7px 14px -8px rgba(40,53,56,0.4);
+  -moz-box-shadow: 11px 7px 14px -8px rgba(40,53,56,0.4);
+  box-shadow: 11px 7px 14px -8px rgba(40,53,56,0.4);
   border-radius: 5px;
 }
 
@@ -56,4 +56,9 @@ p{
   100%{
     transform: translateX(-100%);
   }
+}
+
+.logo{
+  width: 180px;
+  transform: translateY(-75px);
 }
