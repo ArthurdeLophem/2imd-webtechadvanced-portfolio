@@ -62,19 +62,23 @@ p{
 
 .logo{
   width: 180px;
-  transform: translateY(-130px);
+}
+
+.info{
+  display: flex;
+  transform: translateY(-72px);
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .degrees, .iContainer{
   font-weight: bold;
-  margin-left: 10px;
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
   background-color: white;
-  transform: translateY(-72px);
   text-align: center;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
