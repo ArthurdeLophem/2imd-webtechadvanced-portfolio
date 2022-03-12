@@ -60,5 +60,17 @@ p{
 
 .logo{
   width: 180px;
-  transform: translateY(-75px);
+  transform: translateY(-130px);
+}
+
+.degrees{
+  margin-left: 10px;
+  width: 58px;
+  height: 58px;
+  background-color: white;
+  transform: translateY(-70px);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
